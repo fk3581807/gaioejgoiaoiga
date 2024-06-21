@@ -4,7 +4,7 @@ from telegram.ext import BotHandler
 
 app = Flask(__name__)
 
-TOKEN = 'YOUR_BOT_TOKEN'  # replace with your bot token
+TOKEN = '7281444672:AAFWvju0iapnOKpSjsCyDvIe6d6_-V5gRfk'  # replace with your bot token
 
 bot = BotHandler(TOKEN)
 
