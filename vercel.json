@@ -1,0 +1,16 @@
+{
+  "builds": {
+    "src": "bot.py",
+    "useNpm": true
+  },
+  "routes": [
+    {
+      "path": "/",
+      "handler": "bot.py"
+    },
+    {
+      "path": "/webhook",
+      "handler": "webhook.py"
+    }
+  ]
+}
