@@ -21,8 +21,4 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "experimental": {
-    "outputDir": "/opt/app/public"
   }
-}
