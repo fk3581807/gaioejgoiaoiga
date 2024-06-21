@@ -1,16 +1,28 @@
 {
-  "builds": {
-    "src": "bot.py",
-    "useNpm": true
-  },
+  "version": 2,
+  "builds": [
+    {
+      "src": ".",
+      "use": "@vercel/build-utils/babel",
+      "config": {
+        "browserslist": "defaults"
+      }
+    }
+  ],
   "routes": [
     {
-      "path": "/",
-      "handler": "bot.py"
+      "src": "/",
+      "dest": "bot.py"
     },
     {
-      "path": "/webhook",
-      "handler": "webhook.py"
+      "src": "/webhook",
+      "dest": "webhook.py"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "experimental": {
+    "outputDir": "/opt/app/public"
+  }
 }
